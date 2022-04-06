@@ -100,12 +100,6 @@
                     <include name="checkPageTitle"/>
                 </methods>
             </class>
-            <class name="testScripts.LogInScenarios">
-                <methods>
-                    <include name="enterCredentials"/>
-                    <include name ="clickLogIn"/>
-                </methods>
-            </class>
         </classes>
     </test>
 
