@@ -59,29 +59,6 @@
             </class>
         </classes>
     </test>
-    <test name="Verify login section with InValid userName and valid password">
-        <parameter name="user" value="hari"></parameter>
-        <parameter name="pass" value="yrynahU"></parameter>
-        <parameter name="title" value="Guru99 Bank Manager HomePage"></parameter>
-        <classes>
-            <class name="testScripts.supportTest.BrowserUtils"/>
-            <!--Test case-->
-            <class name="testScripts.LogInScenarios">
-                <methods>
-                    <include name="enterCredentials"/>
-                    <include name ="clickLogIn"/>
-                </methods>
-            </class>
-            <!--Assertion-->
-            <class name = "testScripts.supportTest.AssertionUtils">
-                <methods>
-                    <include name="checkAlertMsg"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-
-
     <test name="Validating Reset button ">
         <parameter name="user" value="mngr397408"></parameter>
         <parameter name="pass" value="yrynahU"></parameter>
@@ -98,6 +75,26 @@
             <class name = "testScripts.supportTest.AssertionUtils">
                 <methods>
                     <include name="checkPageTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Verify login section with InValid userName and valid password">
+        <parameter name="user" value="hari"></parameter>
+        <parameter name="pass" value="yrynahU"></parameter>
+        <parameter name="title" value="Guru99 Bank Manager HomePage"></parameter>
+        <classes>
+            <!--Test case-->
+            <class name="testScripts.LogInScenarios">
+                <methods>
+                    <include name="enterCredentials"/>
+                    <include name ="clickLogIn"/>
+                </methods>
+            </class>
+            <!--Assertion-->
+            <class name = "testScripts.supportTest.AssertionUtils">
+                <methods>
+                    <include name="checkAlertMsg"/>
                 </methods>
             </class>
         </classes>
