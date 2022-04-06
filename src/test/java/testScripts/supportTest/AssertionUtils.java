@@ -19,6 +19,7 @@ public class AssertionUtils {
     @Parameters("alertMsg")
     @Test
     public void checkAlertMsg(String expMsg) throws InterruptedException {
+        Thread.sleep(3000);
         if(ExpectedConditions.alertIsPresent() != null){
             String actMsg = BasicUtils.getAlertMsgAndAccept();
             System.out.println("Error Message : "+actMsg);
