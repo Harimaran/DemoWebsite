@@ -1,5 +1,4 @@
 package testScripts;
-
 import driverFactory.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
