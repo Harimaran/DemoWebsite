@@ -10,9 +10,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
-
     static WebDriver driver = null;
-
     public static WebDriver getDriver() {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();

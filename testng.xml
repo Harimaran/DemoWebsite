@@ -82,7 +82,7 @@
     <test name="Verify login section with InValid userName and valid password">
         <parameter name="user" value="hari"></parameter>
         <parameter name="pass" value="yrynahU"></parameter>
-        <parameter name="title" value="Guru99 Bank Manager HomePage"></parameter>
+        <parameter name="alertMsg" value="User or Password is not valid"></parameter>
         <classes>
             <!--Test case-->
             <class name="testScripts.LogInScenarios">
@@ -98,5 +98,5 @@
                 </methods>
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>

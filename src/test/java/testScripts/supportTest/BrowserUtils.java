@@ -7,7 +7,9 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
+import utils.BasicUtils;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class BrowserUtils {
@@ -20,9 +22,13 @@ public class BrowserUtils {
         Driver.getDriver();
     }
 
-
     @AfterSuite
     public void closeBrowser(){
         Driver.closeBrowser();
+    }
+
+    @AfterTest
+    public void takeShot() throws IOException {
+        BasicUtils.takeScreenshot();
     }
 }
