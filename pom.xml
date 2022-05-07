@@ -135,7 +135,8 @@
 					<version>3.0.0-M6</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>AllTest.xml</suiteXmlFile>
+<!--							<suiteXmlFile>basicLogIn.xml</suiteXmlFile>-->
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

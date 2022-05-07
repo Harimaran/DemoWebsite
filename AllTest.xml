@@ -92,7 +92,7 @@
                 </methods>
             </class>
             <!--Assertion-->
-           <class name = "testScripts.supportTest.AssertionUtils">
+            <class name = "testScripts.supportTest.AssertionUtils">
                 <methods>
                     <include name="checkAlertMsg"/>
                 </methods>
